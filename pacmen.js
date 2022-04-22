@@ -49,8 +49,8 @@ const pacArray = [
       item.position.y += item.velocity.y;
 
       item.face = (item.face + 1) % 2; //make the mouth open/close with each iteration
-      item.newimg.style.left = item.position.x;
-      item.newimg.style.top = item.position.y;
+      item.newimg.style.left = item.position.x + 'px';
+      item.newimg.style.top = item.position.y + 'px';
       item.newimg.src = pacArray[item.direction][item.face];
     });
     setTimeout(update, 60);
